@@ -27,7 +27,7 @@ public class TondeuseService {
         }
     }
 
-    private void tournerDroite(Tondeuse tondeuse) {
+    public void tournerDroite(Tondeuse tondeuse) {
         switch (tondeuse.getPosition().getOrientation()) {
             case 'N':
                 tondeuse.getPosition().setOrientation('E');
@@ -44,7 +44,7 @@ public class TondeuseService {
         }
     }
 
-    private void tournerGauche(Tondeuse tondeuse) {
+    public void tournerGauche(Tondeuse tondeuse) {
         switch (tondeuse.getPosition().getOrientation()) {
             case 'N':
                 tondeuse.getPosition().setOrientation('W');
@@ -61,7 +61,7 @@ public class TondeuseService {
         }
     }
 
-    private void avancer(Tondeuse tondeuse, Pelouse pelouse) {
+    public void avancer(Tondeuse tondeuse, Pelouse pelouse) {
         int x = tondeuse.getPosition().getX();
         int y = tondeuse.getPosition().getY();
         switch (tondeuse.getPosition().getOrientation()) {
@@ -79,4 +79,5 @@ public class TondeuseService {
                 break;
         }
     }
+
 }

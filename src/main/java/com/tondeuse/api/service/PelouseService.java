@@ -37,7 +37,7 @@ public class PelouseService {
         }
     }
 
-    private boolean estPositionValide(Position position) {
+    public boolean estPositionValide(Position position) {
         return position.getX() >= 0 && position.getX() <= pelouse.getLargeur() &&
                position.getY() >= 0 && position.getY() <= pelouse.getHauteur();
     }

@@ -31,7 +31,7 @@ public class TondeuseController {
     }
 
     @PostMapping("/executerInstructions")
-    public ResponseEntity<?> executerInstructions(@RequestParam("fichier") MultipartFile fichier) {
+    public ResponseEntity<?> executerInstructions(@RequestParam("fichier.txt") MultipartFile fichier) {
         if (fichier.isEmpty()) {
             return new ResponseEntity<>("Le fichier est vide", HttpStatus.BAD_REQUEST);
         }
